@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgn"
+    android:layout_height="match_parent"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/qrInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:drawableLeft="@drawable/pencil"
+        android:ems="10"
+        android:hint="Enter Text Here To Create QR Code">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/home_button_bg"
+        android:padding="3dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/qr_code"
+        android:text="Generate QR Code" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="91dp" />
+
+    <Button
+        android:id="@+id/saveQR"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/home_button_bg"
+        android:drawableLeft="@drawable/save"
+        android:padding="3dp"
+        android:text="SAVE"
+        android:textColor="@color/background_color"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/shareQR"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/saveQR"
+        android:background="@drawable/home_button_bg"
+        android:drawableLeft="@drawable/share"
+        android:padding="3dp"
+        android:text="SHARE"
+        android:textColor="@color/background_color"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
